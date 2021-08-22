@@ -1,0 +1,16 @@
+.main {
+  background-color: #f9f9f9;
+  flex: auto;
+
+  margin-left: 5px;
+}
+.main__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px 20px;
+}
+@media only screen and (max-width: 640px) {
+  .main {
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "no": 1,
+    "src": "https://www.youtube.com/embed/MepGo2xmVJw",
+    "title": "PlayStation 5 Review: Next Gen Gaming!",
+    "views": "4M",
+    "date": "1 week ago",
+    "channel": "Marques Brownlee",
+    "logo": "https://source.unsplash.com/24x24/?gaming"
+  },
+  {
+    "no": 2,
+    "src": "https://www.youtube.com/embed/kjfu78xo7ZM",
+    "title": "Xbox Series X vs Series S",
+    "views": "108K",
+    "date": "2 weeks ago",
+    "channel": "Linus Tech Tips",
+    "logo": "https://source.unsplash.com/24x24/?ps5"
+  },
+  {
+    "no": 3,
+    "src": "https://www.youtube.com/embed/OQ1CwPhE8KQ",
+    "title": "Reveal Trailer | Call of Duty®: Vanguard",
+    "views": "8M",
+    "date": "1 month ago",
+    "channel": "Call of Duty",
+    "logo": "https://source.unsplash.com/24x24/?call-off-duty"
+  },
+  {
+    "no": 4,
+    "src": "https://www.youtube.com/embed/nOMIwsupy9k",
+    "title": "Black Myth: Wukong - Official Unreal Engine 5 Gameplay Trailer",
+    "views": "739K",
+    "date": "2 months ago",
+    "channel": "IGN",
+    "logo": "https://source.unsplash.com/24x24/?ign"
+  },
+  {
+    "no": 5,
+    "src": "https://www.youtube.com/embed/ASzOzrB-a9E",
+    "title": "Battlefield 2042 Official Reveal Trailer (ft. 2WEI)",
+    "views": "332K",
+    "date": "3 months ago",
+    "channel": "Battlefield",
+    "logo": "https://source.unsplash.com/24x24/?battlefield"
+  },
+  {
+    "no": 6,
+    "src": "https://www.youtube.com/embed/1O6Qstncpnc",
+    "title": "Hogwarts Legacy - Official Reveal Trailer | PS5",
+    "views": "9M",
+    "date": "1 year ago",
+    "channel": "PlayStation",
+    "logo": "https://source.unsplash.com/24x24/?playstation"
+  },
+  {
+    "no": 7,
+    "src": "https://www.youtube.com/embed/UwJAAy7tPhE",
+    "title": "Dying Light 2 Stay Human - Official Gameplay Trailer",
+    "views": "40M",
+    "date": "7 months ago",
+    "channel": "Dying Light",
+    "logo": "https://source.unsplash.com/24x24/?2"
+  },
+  {
+    "no": 8,
+    "src": "https://www.youtube.com/embed/hlFB2KgCs-4",
+    "title": "Call of Duty: Vanguard - Official Reveal Trailer",
+    "views": "679K",
+    "date": "1 month ago",
+    "channel": "IGN",
+    "logo": "https://source.unsplash.com/24x24/?ign"
+  }
+]

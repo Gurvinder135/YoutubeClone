@@ -1,0 +1,73 @@
+.searchcard {
+  display: flex;
+  margin: 10px 12vw;
+}
+
+.searchcard__info {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+.searchcard__content {
+  margin-left: 20px;
+  margin-top: 5px;
+  width: 27vw;
+}
+.searchcard__title {
+  color: rgb(3, 3, 3);
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  white-space: normal;
+}
+.searchcard__minitext {
+  color: rgb(96, 96, 96);
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+}
+.searchcard__logo > img {
+  border-radius: 50%;
+}
+.searchcard__text {
+  color: rgb(96, 96, 96);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+  overflow-wrap: normal;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 950px) {
+  .searchcard {
+    margin: auto 2px;
+  }
+  .searchcard > iframe > div {
+    width: 40vw;
+    margin-bottom: 20px;
+    height: 23vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .searchcard {
+    height: 150px;
+  }
+  .searchcard > iframe {
+    margin-bottom: 20px;
+    height: 35vw;
+  }
+  .searchcard__title {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
