@@ -8,7 +8,7 @@ import AppsSharpIcon from "@material-ui/icons/AppsSharp";
 import NotificationsSharpIcon from "@material-ui/icons/NotificationsSharp";
 import logo from "./YouTube_Logo.svg";
 import { useHistory } from "react-router-dom";
-export default function Header({ sidebar }) {
+export default function Header({ sidebar, search, input, tempinput }) {
   let history = useHistory();
   const [largeMedia, setLargemedia] = useState(false);
   useEffect(() => {
@@ -18,9 +18,7 @@ export default function Header({ sidebar }) {
       setLargemedia(e.matches);
     });
     return () => {
-      mediaWatcher.removeEventListener("change", (e) => {
-        setLargemedia(e.matches);
-      });
+      mediaWatcher.removeEventListener();
     };
   }, []);
   function a() {
@@ -36,14 +34,18 @@ export default function Header({ sidebar }) {
       {largeMedia ? (
         <div className="header__mid">
           <div className="header__input">
-            <input></input>
-            <SearchSharpIcon className="header--img" />
+            <input
+              onChange={input}
+              placeholder="Search"
+              value={tempinput}
+            ></input>
+            <SearchSharpIcon className="header--img" onClick={search} />
           </div>
           <MicSharpIcon className="header--img" />
         </div>
       ) : (
         <div className="header__mobile">
-          <SearchSharpIcon className="header--img-mobile" />
+          <SearchSharpIcon className="header--img-mobile" onClick={search} />
         </div>
       )}
 

@@ -51,7 +51,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 5px;
-  margin-left: 15vw;
+  margin-left: 5vw;
 }
 .playpage__left {
   margin-right: 1.8vw;
@@ -82,6 +82,8 @@
 .hr > img {
   margin-right: 12px;
   border-radius: 50%;
+  height: 24px;
+  width: 24px;
 }
 .playpage__comment {
   color: rgb(3, 3, 3);
@@ -107,5 +109,18 @@
 @media only screen and (max-width: 800px) {
   .playpage {
     margin-left: 2px;
+  }
+}
+@media only screen and (max-width: 1315px) {
+  .playpage__left > iframe {
+    width: 72vw;
+    height: 48vw;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .playpage__left > iframe {
+    width: 84vw;
+    height: 48vw;
+    margin-left: 10px;
   }
 }

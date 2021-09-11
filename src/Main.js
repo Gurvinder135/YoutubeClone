@@ -6,8 +6,9 @@ export default function Main() {
   return (
     <div className="main">
       <div className="main__container">
-        {home.map((home) => (
+        {home.map((home, index) => (
           <Card
+            key={index}
             url={home.src}
             title={home.title}
             logo={home.logo}

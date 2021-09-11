@@ -1,6 +1,14 @@
 import React from "react";
 import "./css/searchcard.css";
+import { useHistory } from "react-router-dom";
 export default function Searchcard({ url, title, logo, channel, view, time }) {
+  let history = useHistory();
+  function openplaypage() {
+    history.push({
+      pathname: "/player",
+      state: { parms: { title, channel, logo, url, view, time } },
+    });
+  }
   return (
     <div className="searchcard">
       <iframe
@@ -8,11 +16,9 @@ export default function Searchcard({ url, title, logo, channel, view, time }) {
         height="201"
         src={url}
         title="YouTube video player"
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
       ></iframe>
-      <div className="searchcard__content">
+      <div className="searchcard__content" onClick={openplaypage}>
         <div className="searchcard__title">{title}</div>
         <div className="searchcard__minitext">
           {view} views • Streamed {time}

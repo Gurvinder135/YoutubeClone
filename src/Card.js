@@ -1,6 +1,14 @@
 import React from "react";
 import "./css/card.css";
+import { useHistory } from "react-router-dom";
 export default function Card({ url, title, logo, channel, view, time }) {
+  let history = useHistory();
+  function openplaypage() {
+    history.push({
+      pathname: "/player",
+      state: { parms: { title, channel, logo, url, view, time } },
+    });
+  }
   return (
     <div className="card">
       <iframe
@@ -8,11 +16,9 @@ export default function Card({ url, title, logo, channel, view, time }) {
         height="190"
         src={url}
         title="YouTube video player"
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
       ></iframe>
-      <div className="card__content">
+      <div className="card__content" onClick={openplaypage}>
         <div className="card__logo">
           <img src={logo} alt="" />
         </div>
