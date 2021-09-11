@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Sidebar from "./Sidebar";
 import Minisidebar from "./Minisidebar";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   const [minibar, setMinibar] = useState("0");
@@ -33,16 +34,17 @@ function App() {
 
   return (
     <div>
-      <Header sidebar={sidebar} />
-      {minibar === "1" ? (
-        <div className="app">
-          <Minisidebar />
-        </div>
-      ) : (
-        <div className="app">
-          <Sidebar />
-        </div>
-      )}
+      <Router>
+        {minibar === "1" ? (
+          <div>
+            <Minisidebar sidebar={sidebar} />
+          </div>
+        ) : (
+          <div>
+            <Sidebar sidebar={sidebar} />
+          </div>
+        )}
+      </Router>
     </div>
   );
 }

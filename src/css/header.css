@@ -21,6 +21,7 @@
 .header__img {
   height: 20px;
   width: 90px;
+  cursor: pointer;
   padding: 18px 14px 18px 16px;
 }
 

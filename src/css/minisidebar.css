@@ -2,6 +2,10 @@
   flex: 0.05;
   margin-left: 18px;
 }
+.minisidebar__container {
+  display: flex;
+  flex-direction: column;
+}
 .minisidebar__home:hover {
   background-color: #f3f3f3;
 }

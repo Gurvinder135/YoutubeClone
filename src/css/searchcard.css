@@ -59,15 +59,18 @@
 
 @media only screen and (max-width: 500px) {
   .searchcard {
-    height: 150px;
+    height: auto;
+    flex-direction: column;
   }
   .searchcard > iframe {
     margin-bottom: 20px;
     height: 35vw;
   }
-  .searchcard__title {
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 20px;
+  .searchcard__content {
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 67vw;
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
